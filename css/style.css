@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /* setting the general css */
+
+.game-board { 
+    width: 80%; 
+    height: 500px; 
+    border: 1px solid #333;
+    margin: 0;
+    position: relative; /* For the images to respect the delimitation of game-board
+} /* setting the div size, border and centering the div */
+    overflow: hidden; /* everything that leaves the game-board will disappear */ }
