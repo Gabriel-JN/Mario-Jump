@@ -18,17 +18,17 @@
     position: absolute; /* for no image to interfere with the behavior of the other */
     bottom: 0; /* to fix pipe in bottom */
     width: 80px;
-    right: 0;
-    animation: pipe-animation 2s;
+    right: -80px;
+    animation: pipe-animation 6s infinite linear; /* setting the animation time, to start and finish with the same velocity and to not stop */ 
 }
 
 @keyframes pipe-animation {
     from { 
-
+        right: 0;
     } /* where the animation will begin */
 
     to {
-
+        right: 100%;
     } /* where the animation will end */
     
 }
