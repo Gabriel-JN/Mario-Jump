@@ -24,7 +24,14 @@ const loop = setInterval(() => {
         mario.style.animation = 'none';
         mario.style.bottom = `${marioPosition}px`;
 
+        mario.src = './images/game-over.png'; /* if the game over, then the mario image will be replaced by gamer over image */
+        mario.style.width = '75px'
+        mario.style.marginLeft = '50px'
+
+        clearInterval(loop); /* to clean the loop after game over */
+
     } /* if the distance from mario to the pipe is less than 120px, then the animation will stop and the property left will be the Mario position */
+    /* if the distance to the bottom is bigger than 0, then the mario animation stops where he was */
 
 }, 10);
 document.addEventListener('keydown', jump); /* adding a event to execute the function "jump"
