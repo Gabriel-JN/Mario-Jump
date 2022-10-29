@@ -7,11 +7,12 @@
 .game-board { 
     width: 80%; 
     height: 500px; 
-    border: 1px solid #333;
-    margin: 0;
+    border-bottom: 15px solid rgb(35, 160, 35);
+    margin: 0 auto;
     position: relative; /* For the images to respect the delimitation of game-board
 } /* setting the div size, border and centering the div */
     overflow: hidden; /* everything that leaves the game-board will disappear */ 
+    background: linear-gradient(#87CEEB, #E0F6FF);
 }
 
 .pipe {
@@ -32,11 +33,23 @@
     animation: jump 500ms ease-out; /* linking the keyframes "jump" and setting the time */
 }
 
-
+.clouds {
+    position: absolute; /* to not interfere in the Mario's position */
+    width: 550px;
+    animation: clouds-animation 20s infinite linear;
+}
+@keyframes clouds-animation {
+    from {
+        right: 0%;
+    }
+    to {
+        right: 100%;
+    }
+}
 
 @keyframes pipe-animation {
     from { 
-        right: 0;
+        right: -550px;
     } /* where the animation will begin */
 
     to {
