@@ -11,4 +11,24 @@
     margin: 0;
     position: relative; /* For the images to respect the delimitation of game-board
 } /* setting the div size, border and centering the div */
-    overflow: hidden; /* everything that leaves the game-board will disappear */ }
+    overflow: hidden; /* everything that leaves the game-board will disappear */ 
+}
+
+.pipe {
+    position: absolute; /* for no image to interfere with the behavior of the other */
+    bottom: 0; /* to fix pipe in bottom */
+    width: 80px;
+    right: 0;
+    animation: pipe-animation 2s;
+}
+
+@keyframes pipe-animation {
+    from { 
+
+    } /* where the animation will begin */
+
+    to {
+
+    } /* where the animation will end */
+    
+}
