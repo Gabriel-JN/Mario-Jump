@@ -18,15 +18,14 @@
     position: absolute; /* for no image to interfere with the behavior of the other */
     bottom: 0; /* to fix pipe in bottom */
     width: 80px;
-    right: -80px;
-    animation: pipe-animation 6s infinite linear; /* Linking the key frames "pipe-animation" and setting
+    animation: pipe-animation 1.5s infinite linear; /* Linking the key frames "pipe-animation" and setting
     the animation time, to start and finish with the same velocity and to not stop */ 
 }
 
 .mario {
     width: 150px;
     position: absolute; /* To not interfere in the other images */
-    bottom: 0;
+    bottom: 0px;
 }
 
 .jump {
