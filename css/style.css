@@ -19,8 +19,21 @@
     bottom: 0; /* to fix pipe in bottom */
     width: 80px;
     right: -80px;
-    animation: pipe-animation 6s infinite linear; /* setting the animation time, to start and finish with the same velocity and to not stop */ 
+    animation: pipe-animation 6s infinite linear; /* Linking the key frames "pipe-animation" and setting
+    the animation time, to start and finish with the same velocity and to not stop */ 
 }
+
+.mario {
+    width: 150px;
+    position: absolute; /* To not interfere in the other images */
+    bottom: 0;
+}
+
+.jump {
+    animation: jump 500ms ease-out; /* linking the keyframes "jump" and setting the time */
+}
+
+
 
 @keyframes pipe-animation {
     from { 
@@ -31,4 +44,27 @@
         right: 100%;
     } /* where the animation will end */
     
+}
+
+@keyframes jump {
+
+    0% {
+        bottom: 0%;
+    }
+
+    40 % {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60$ {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
 }
